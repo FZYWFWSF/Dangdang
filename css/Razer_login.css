@@ -1,0 +1,22 @@
+@charset "utf-8";
+body{background:url(https://assets.razerzone.com/razerid/images/landing/gunmetal.jpg) no-repeat;background-size:100%;width:100%;height:100%;}
+#formbox{width:350px;margin:100px auto;background:rgba(1,1,1,0.7);border-radius: 5px;}
+#formbox .header{
+	border:0;
+	margin: 40px 0 10px;
+}
+#formbox .header h3{
+	color:#fff;
+}
+#formbox input{
+	border:0;
+	background:transparent;
+	border-bottom: 1px solid #fff;
+	outline:none;
+	width:310px;
+	display: block;
+	padding:5px;
+	margin-left: 5px;
+	color:#fff;
+	font-size:16px;
+}

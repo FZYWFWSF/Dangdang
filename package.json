@@ -1,0 +1,29 @@
+{
+  "name": "gulpdangdnag",
+  "version": "1.0.0",
+  "description": "当当 dangdang",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "图书",
+    "书籍",
+    "考研书籍",
+    "东野圭吾",
+    "正版书籍",
+    "热销小说"
+  ],
+  "author": "ws",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass-china": "^3.1.0",
+    "gulp-uglify": "^3.0.1",
+    "uglify": "^0.1.5"
+  }
+}
