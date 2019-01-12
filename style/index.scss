@@ -67,7 +67,7 @@ $boxwidth:1200px;
 			height:195px;
 			position: absolute;
 			top:25px;
-			left:83px;
+			left:75px;
 			padding:10px;
 			border:1px solid #6e6e6e;
 			background:#fff;
@@ -296,6 +296,8 @@ $logocolor:#d11e27;
 					border:1px solid #eee;
 					display:none;
 					background:#fff;
+					position:relative;
+					z-index:60;
 					a{
 					padding:5px 5px 5px 10px;
 					margin:0;
@@ -438,7 +440,7 @@ $logocolor:#d11e27;
 				padding-left: 30px;
 				color:#fff;
 				font-weight:900;
-				font-size:14px;
+				font-size:16px;
 			}
 		}
 		li:first-child a:hover{
@@ -482,15 +484,18 @@ $logocolor:#d11e27;
 		width:$boxwidth;
 		margin:0 auto;
 		position:relative;
+		height:508px;
 		.left{
 			width:200px;
 			background:#fafafa;
 			float:left;
 			height:488px;
+			position:relative;
+			z-index:2;
 			ul{
 				
 				li:first-child{
-					padding-top: 8px;
+					padding-top: 9px;
 				}
 				li a{
 					color:#323232;
@@ -507,16 +512,20 @@ $logocolor:#d11e27;
 					color:#ff2832;
 					font-size:16px;
 					background:#fff;
+					border-right: 0;
+					width:202px;
 				}
 			}
 		}
 		.left_list{
-			position:relative;
+			position:absolute;
+			left:200px;
+			display:none;
 			.left_list_div{
-				position:absolute;
-				left:200px;
+				position:absolute;				
 				background:#fff;
 				padding:10px;
+				border:2px solid #ff2832;
 				.l_l_d_top {
 					li{
 					float:left;
@@ -557,7 +566,7 @@ $logocolor:#d11e27;
 						color:#ff2832;
 						font-weight:bold;
 						font-size:14px;
-						line-height:30px;
+						line-height:35px;
 						padding-right: 25px;
 						border-bottom:1px solid #fff;
 					}
@@ -566,7 +575,7 @@ $logocolor:#d11e27;
 						a{
 						color:#323232;
 						padding:0 5px;
-						line-height:30px;
+						line-height:35px;
 						font-size:12px;
 							i{
 								font-family:"宋体";
@@ -580,7 +589,7 @@ $logocolor:#d11e27;
 					ul{
 						float:left;
 						width:979px;
-						line-height:30px;
+						line-height:35px;
 						li{
 							float:left;
 							width:979px;
@@ -589,7 +598,7 @@ $logocolor:#d11e27;
 								color:#ff2832;
 								font-weight:bold;
 								font-size:14px;
-								line-height:30px;
+								line-height:35px;
 								padding-right: 25px;
 								border-bottom:1px solid #fff;
 							}
@@ -616,9 +625,14 @@ $logocolor:#d11e27;
 		.center{
 			float:left;
 			background:#000;
+			position:relative;
+			a:first-child img{
+				width: 100%;
+			}
 			a:nth-child(2),a:nth-child(3),a:nth-child(4),a:nth-child(5),a:nth-child(6) img{
 				float:left;
 				opacity:0.9;
+				width:199px;
 				border:1px solid #eee;
 			}
 			a:nth-child(2):hover{
@@ -627,6 +641,326 @@ $logocolor:#d11e27;
 			a:nth-child(3):hover,a:nth-child(4):hover,a:nth-child(5):hover{
 				opacity:1;
 			}
+			ul{
+				position:absolute;
+				left:280px;
+				bottom: 200px;
+				li{
+					width:20px;
+					height:20px;
+					background:#666;
+					text-align:center;
+					line-height:20px;
+					border-radius: 50%;
+					font-size:12px;
+					float:left;
+					margin:0 5px;
+					color:#fff;
+				}
+				li:hover{
+					width:20px;
+					height:20px;
+					background:#ff2832;
+					text-align:center;
+					line-height:20px;
+					border-radius: 50%;
+					font-size:12px;
+					float:left;
+					margin:0 5px;
+					color:#fff;
+				}
+			}
+		}
+		.right{
+			float:right;
+			img{
+				border:1px solid #f0f0f0;
+				cursor: pointer;
+			}
+			nav a{
+				line-height:35px;
+				display:block;
+				float:left;
+				padding: 0 22px;
+				font-size:14px;
+				color:#323232;
+				background:#f0f0f0;
+				border:1px solid #e6e6e6;
+			}
+			& a:hover{
+				background-color: #fff;
+				text-decoration:none;
+				border:1px solid #fff;
+
+			}
+			ul{
+				padding:8px 5px 15px;
+				border:1px solid #eee;
+				li a{
+					line-height:22px;
+					font-size:12px;
+					color:#323232;
+				}
+				a:hover{
+					line-height:22px;
+					font-size:12px;
+					color:#ff2832;
+				}
+				& .iconfont{
+					line-height:22px;
+					font-size:12px;
+					color:#323232;
+				}
+			}
 		}
 	}
 }
+/* seckill */
+.sckillbigbox{
+	width:100%;
+	background:#fff;
+	.sckillbox{
+		width:$boxwidth;
+		margin:0 auto;
+		margin-top:20px;
+		background:#fff;
+			.left{
+				float:left;
+				.timer{
+					border-bottom:2px solid #3c3c3c;
+					width:996px;
+					a img{
+						margin-right: 30px;
+					}
+					img{
+						float:left;
+					}
+					aside{
+						float:left;
+						width:130px;
+						height:39px;
+						background:url(../images/home_miaosha.png) no-repeat;
+						span:first-child{
+							font-size:20px;
+							margin-left:32px;
+							display:inline-block;
+							margin-top:3px; 
+						}
+						span:nth-child(2){
+							font-size:20px;
+							margin-left:11px;
+							display:inline-block;
+							margin-top:3px; 
+						}
+						span:last-child{
+							font-size:20px;
+							margin-left:11px;
+							display:inline-block;
+							margin-top:3px; 
+						}
+					}
+					ul{
+						float:left;
+						li{
+							float:left;
+							a{
+								font-size:20px;
+								color:#323232;
+								margin-right:30px;
+								display:block;
+								float:left;
+								line-height:40px;
+							}
+							a:hover{
+								border-bottom:3px solid #ff2832;
+								text-decoration:none;
+								display:block;
+								margin-bottom:-3px;
+							}
+							a:first-child{
+								margin-left:40px;
+							}
+						}
+					}
+				}
+				.photo{
+					width:995px;
+					dl{
+						border:1px solid #eee;
+						width:199px;
+						text-align:center;
+						float:left;
+						padding-bottom:10px;
+						dt img{
+							margin:0 auto;
+							padding: 10px;
+							cursor: pointer;
+						}
+						dd{
+							
+							div{
+								height:8px;
+								width:130px;
+								background:#ffb7b7;
+								border-radius:5px;
+								position:relative;
+								top:-30px;
+								z-index:10;
+								margin:0 auto;
+								span:first-child{
+									background:#fc2c3a;
+									height:8px;
+									width:0%;
+									display:block;
+									border-radius:5px;
+									position:relative;
+									z-index:20;
+								}
+								span:nth-child(2){
+									background:#ffb7b7;
+									height:20px;
+									width:76px;
+									display:block;
+									border-radius:10px;
+									position:relative;
+									left:27px;
+									top:-15px;
+								}
+								span:last-child{
+									display:block;
+									
+									color:#fff;
+									font-size: 12px;
+									line-height:20px;
+									text-align:center;
+									position:relative;
+									left:0;
+									top:-35px;
+									z-index:30;
+								}
+							}
+							a{
+								line-height:20px;
+								font-size:12px;
+								color:#323232;
+								display:block;
+							}
+							a:hover{
+								color:#ff2832;
+							}
+							span{
+								font-size:14px;
+								color:#ff2832;
+								b{
+									font-size:12px;
+								}
+							}
+							i{
+								font-size:12px;
+								color:#666;
+								text-decoration:line-through;
+								padding-left:5px;
+							}
+						}
+					}
+				}
+			}
+		.right{
+			float:right;
+			ul{
+				border-bottom:2px solid #ff2832;
+				width:204px;
+				li{
+					float:left;
+					a{
+						font-size:20px;
+						color:#ff2832;
+						margin-right:30px;
+						display:block;
+						float:left;
+						line-height:40px;
+						padding-left:20px;
+					}
+				}				
+			}
+			aside img{
+					border: 1px solid #eee;
+					border-left: none;
+					width:100%;
+					cursor: pointer;
+				}
+		}
+	}
+}
+/* 尾品汇 */
+.weibigbox{
+	width:100%;
+	.weibox{
+		width:$boxwidth;
+		background:#fff;
+		margin:0 auto;
+			.top{
+				img{
+				float:left;
+				margin-top:30px;
+				cursor: pointer;
+			}
+			a{
+				float:right;
+				color:#ff2832;
+				padding-top:45px;
+			}
+		}
+		.bottom{
+			.left{
+				float:left;
+				img{
+				border:1px solid #e6e6e6;
+				cursor: pointer;
+				}
+				aside{
+					border:1px solid #e6e6e6;
+					width:200px;
+					ul{	
+						li{
+							float:left;
+							background-color:#f9f9f9;
+							width:50%;
+							text-align:center;
+							height:118px;
+							position:relative;
+							border:1px solid #eee;
+							img{
+								position:absolute;
+								border:0;
+								margin:auto;
+								top:0;
+								left:0;
+								bottom:0;
+								right:0;
+								cursor: pointer;
+							}
+						}
+					}
+				}
+			}
+			.right{
+				float:left;
+				width:1000px;
+				ul li{
+					border:1px solid #eee;
+					width:20%;
+					float: left;
+					img{
+						width:100%;
+						cursor: pointer;
+					}
+				}
+				li:hover{
+					border:2px solid #ff5797;
+				}
+			}
+		}
+	}
+}
+/* book */
