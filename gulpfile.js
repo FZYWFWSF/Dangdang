@@ -117,9 +117,9 @@ gulp.task("javascript", function(){
 	return gulp.src(["index1.js","index2.js"])
 	.pipe(concat("index.js"))
 	.pipe(gulp.dest("Dangdang/js"))
-	.pipe(uglify())
+/*	.pipe(uglify())
 	.pipe(rename("index.min.js"))
-	.pipe(gulp.dest("Dangdang/js"))
+	.pipe(gulp.dest("Dangdang/js"))*/
 	.pipe(connect.reload());
 })
 
